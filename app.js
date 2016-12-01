@@ -1,0 +1,1 @@
+angular.module('azLoop', ['ui.bootstrap']);
