@@ -1,343 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.css">
-    <title>
-        azLoop
-    </title>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        <title>
+            azLoop
+        </title>
 
-    <!-- Bootstrap CSS Link-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
-<body ng-app="azLoop" ng-controller="AzLoopController">
-<nav class="navbar-sticky navbar navbar-inverse navbar-static-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html"><img src="logo_white_no_text.png" width="150px" height="40" alt="AZ Loop"> </a>
-    </div>
+        <!-- Bootstrap CSS Link-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="updates.html">Updates</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Meet The Team <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="Projectleads.html">Project Leads</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="business_team.html">Business Team</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="controls_team.html">Controls Team</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="mechanical_team.html">Mechanical Team</a></li>
-          </ul>
-        </li>
-        <!-- <li><a href="sponsors.html">Sponsors</a></li> -->
-      </ul>
+        <!-- Script Links -->
+        <script
+                src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                crossorigin="anonymous"></script>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"> </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.0/ui-bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.0/ui-bootstrap-tpls.min.js"></script>
 
-      <div id="navbar-icons">
-          <ul class="nav navbar-nav navbar-right">
+        <!-- File Links -->
+        <script src="app.js"></script>
+        <script src="Scripts/azLoopController.js"></script>
 
-              <li><a id="facebook" href="https://www.facebook.com/AZLoopHyperloop"><img src="FB-f-Logo__blue_29.png"></a></li>
-              <li><a id="twitter" href="https://twitter.com/AZLoopHyperloop"><img src="Twitter_Social_Icon_Rounded_Square_Color.png" width="29" height="29"></a></li>
-              <li><a id="instagram" href="https://www.instagram.com/azloophyperloop/"><img src="Instagram-v051916.png" width="29" height="29"></a></li>
-
-          </ul>
-      </div>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-<!-- Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\control\Hyperloop_13.jpg" alt="...">
-                  <div class="caption">
-                    <h3>Sandesh Bhat</h3>
-                    <h6>Controls Team Lead</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
+        <!-- Activates Bootstrap 'popover' -->
+        <script>
+            $(function () {
+                $('[data-toggle="popover"]').popover();
+            });
+        </script>
+    </head>
+    <body ng-app="azLoop" ng-controller="AzLoopController">
+        <nav class="navbar-sticky navbar navbar-inverse navbar-static-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="logo_white_no_text.png" width="150px" height="40" alt="AZ Loop"> </a>
                 </div>
-            </div>
 
-           <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\control\photo.jpg" alt="...">
-                  <div class="caption">
-                    <h3>John Zach Alden</h3>
-                    <h6>Electronics Lead</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="updates.html">Updates</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Meet The Team <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Projectleads.html">Project Leads</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="business_team.html">Business Team</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="controls_team.html">Controls Team</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="mechanical_team.html">Mechanical Team</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li><a href="sponsors.html">Sponsors</a></li> -->
+                    </ul>
 
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\control\Sam.jpg" alt="...">
-                  <div class="caption">
-                    <h3>Samantha Janko</h3>
-                    <h6>Power Lead</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
+                    <div id="navbar-icons">
+                        <ul class="nav navbar-nav navbar-right">
 
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\control\Dan.jpg" alt="...">
-                  <div class="caption">
-                    <h3>Dan Carmody</h3>
-                    <h6>Software Lead</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
-        </div>
+                            <li><a id="facebook" href="https://www.facebook.com/AZLoopHyperloop"><img src="FB-f-Logo__blue_29.png"></a></li>
+                            <li><a id="twitter" href="https://twitter.com/AZLoopHyperloop"><img src="Twitter_Social_Icon_Rounded_Square_Color.png" width="29" height="29"></a></li>
+                            <li><a id="instagram" href="https://www.instagram.com/azloophyperloop/"><img src="Instagram-v051916.png" width="29" height="29"></a></li>
 
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\control\Satyavamshi.jpg" alt="...">
-                  <div class="caption">
-                    <h3>Satyavamshi Pattela</h3>
-                    <h6>Modeling & Simulation</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\Image not available.png" alt="...">
-                  <div class="caption">
-                    <h3>Sanjay Reddy</h3>
-                    <h6>Modeling & Simulation</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\control\Venkatavaradhan V Lakshminarayanan.jpg" alt="...">
-                  <div class="caption">
-                    <h4>Venkatavaradhan Lakshminarayanan</h4>
-                    <h6>Modeling & Simulation</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\control\Singh_Kanishka_Hyperloop.jpg" alt="...">
-                  <div class="caption">
-                    <h3>Kanishka Singh</h3>
-                    <h6>Modeling & Simulation</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\control\Akshat.jpg" alt="...">
-                  <div class="caption">
-                    <h3>Akshat Baveja</h3>
-                    <h6>Modeling & Simulation</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\control\Shubham Sonawani.jpg" alt="...">
-                  <div class="caption">
-                    <h3>Shubham Sonawani</h3>
-                    <h6>Modeling & Simulation</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\control\Abhinav Karthik Sridhar.jpg" alt="...">
-                  <div class="caption">
-                    <h4>Abhinav Karthik Sridhar</h4>
-                    <h6>Modeling & Simulation</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\control\Brent.jpg" alt="...">
-                  <div class="caption">
-                    <h3>Brent Kolste</h3>
-                    <h6>Controllers, Sensors, & Actuators</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\control\Victor.jpg" alt="...">
-                  <div class="caption">
-                    <h3>Victor Rodriguez</h3>
-                    <h6>Controllers, Sensors, & Actuators</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\control\Ryan.jpg" alt="...">
-                  <div class="caption">
-                    <h3>Ryan Kritz</h3>
-                    <h6>Controllers, Sensors, & Actuators</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\control\Tahmidur.jpg" alt="...">
-                  <div class="caption">
-                    <h3>Tahmidur Rahman</h3>
-                    <h6>Controllers, Sensors, & Actuators</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\Image not available.png" alt="...">
-                  <div class="caption">
-                    <h3>Saeed Aljneibi</h3>
-                    <h6>Controllers, Sensors, & Actuators</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\control\Xunguang.jpg" alt="...">
-                  <div class="caption">
-                    <h3>Xunguang Li</h3>
-                    <h6>Communication & Navigation</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\control\Prashanth Kumar Mansani.jpg" alt="...">
-                  <div class="caption">
-                    <h3>Prashanth Prasani</h3>
-                    <h6>Power</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\control\Nishi.jpg" alt="...">
-                  <div class="caption">
-                    <h3>Nishi Shah</h3>
-                    <h6>Software</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\Image not available.png" alt="...">
-                  <div class="caption">
-                    <h3>Robert Velarde</h3>
-                    <h6>Software</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\control\LinkedIn.jpg" alt="...">
-                  <div class="caption">
-                    <h3>Nikola Uzelac</h3>
-                    <h6>Software</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
-                  <img src="member_bios\pictures\Image not available.png" alt="...">
-                  <div class="caption">
-                    <h3>Stephen Flores</h3>
-                    <h6>Software</h6>
-                    <p><a href="#" class="btn btn-primary" role="button">Learn More</a></p>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div>
-        <nav aria-label="...">
-            <ul class="pager">
-                <li class="previous"><a href="business_team.html"><span aria-hidden="true">&larr;</span>Business Team</a></li>
-                <li class="next"><a href="mechanical_team.html">Mechanical Team <span aria-hidden="true">&rarr;</span></a></li>
-            </ul>
+                        </ul>
+                    </div>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
         </nav>
-     </div>
-</body>
 
-<!-- Script Links -->
-<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"> </script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.0/ui-bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.0/ui-bootstrap-tpls.min.js"></script>
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- Content -->
+        <div class="container meetTeam">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\control\Hyperloop_13.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Sandesh Bhat</h3>
+                            <h6>Controls Team Lead</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
 
-<!-- File Links -->
-<script src="app.js"></script>
-<script src="Scripts/azLoopController.js"></script>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\control\photo.jpg" alt="...">
+                        <div class="caption">
+                            <h3>John Zach Alden</h3>
+                            <h6>Electronics Lead</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\control\Sam.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Samantha Janko</h3>
+                            <h6>Power Lead</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\control\Dan.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Dan Carmody</h3>
+                            <h6>Software Lead</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\control\Satyavamshi.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Satyavamshi Pattela</h3>
+                            <h6>Modeling & Simulation</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\Image not available.png" alt="...">
+                        <div class="caption">
+                            <h3>Sanjay Reddy</h3>
+                            <h6>Modeling & Simulation</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\control\Venkatavaradhan V Lakshminarayanan.jpg" alt="...">
+                        <div class="caption">
+                            <h4>Venkatavaradhan Lakshminarayanan</h4>
+                            <h6>Modeling & Simulation</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\control\Singh_Kanishka_Hyperloop.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Kanishka Singh</h3>
+                            <h6>Modeling & Simulation</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\control\Akshat.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Akshat Baveja</h3>
+                            <h6>Modeling & Simulation</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\control\Shubham Sonawani.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Shubham Sonawani</h3>
+                            <h6>Modeling & Simulation</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\control\Abhinav Karthik Sridhar.jpg" alt="...">
+                        <div class="caption">
+                            <h4>Abhinav Karthik Sridhar</h4>
+                            <h6>Modeling & Simulation</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\control\Brent.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Brent Kolste</h3>
+                            <h6>Controllers, Sensors, & Actuators</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\control\Victor.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Victor Rodriguez</h3>
+                            <h6>Controllers, Sensors, & Actuators</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\control\Ryan.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Ryan Kritz</h3>
+                            <h6>Controllers, Sensors, & Actuators</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\control\Tahmidur.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Tahmidur Rahman</h3>
+                            <h6>Controllers, Sensors, & Actuators</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\Image not available.png" alt="...">
+                        <div class="caption">
+                            <h3>Saeed Aljneibi</h3>
+                            <h6>Controllers, Sensors, & Actuators</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\control\Xunguang.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Xunguang Li</h3>
+                            <h6>Communication & Navigation</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\control\Prashanth Kumar Mansani.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Prashanth Prasani</h3>
+                            <h6>Power</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\control\Nishi.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Nishi Shah</h3>
+                            <h6>Software</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\Image not available.png" alt="...">
+                        <div class="caption">
+                            <h3>Robert Velarde</h3>
+                            <h6>Software</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\control\LinkedIn.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Nikola Uzelac</h3>
+                            <h6>Software</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus"  title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="member_bios\pictures\Image not available.png" alt="...">
+                        <div class="caption">
+                            <h3>Stephen Flores</h3>
+                            <h6>Software</h6>
+                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="NAME" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <nav aria-label="...">
+                <ul class="pager">
+                    <li class="previous"><a href="business_team.html"><span aria-hidden="true">&larr;</span>Business Team</a></li>
+                    <li class="next"><a href="mechanical_team.html">Mechanical Team <span aria-hidden="true">&rarr;</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </body>
+
 </html>
