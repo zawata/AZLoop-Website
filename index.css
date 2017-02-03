@@ -14,3 +14,7 @@ body {
 .meetTeam{
     padding-top: 20px;
 }
+
+.longName{
+    font-size: 20px;
+}
