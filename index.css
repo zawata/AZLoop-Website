@@ -22,3 +22,23 @@ body {
     padding-left: 25%;
     padding-right: 25%;
 }
+
+#sponsor{
+    font-size: 50px;
+    text-align: center;
+}
+
+#sponsorState {
+	font-size: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.sponsor{
+    text-align: center;
+    padding: 30px;
+}
+
+#bottomRow {
+	padding-top: 50px;
+}
