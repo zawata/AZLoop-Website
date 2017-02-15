@@ -3,33 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.css">
-    <title>
-        AZLoop | Mechanical Team
-    </title>
+    <title>AZLoop | Mechanical Team</title>
 
+    <!-- Local CSS Link-->
+    <link rel="stylesheet" href="../../index.css">
     <!-- Bootstrap CSS Link-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Script Links -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.0/ui-bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
-    <!-- Activates Bootstrap 'popover' -->
+    <!-- File Links -->
+    <script src="app.js"></script>
+    <script src="Scripts/azLoopController.js"></script>
+
     <script>
         $(function() {
             $('[data-toggle="popover"]').popover();
         });
     </script>
-
-    <!-- File Links -->
-    <script src="app.js"></script>
-    <script src="Scripts/azLoopController.js"></script>
 </head>
 
 <body ng-app="azLoop" ng-controller="AzLoopController">
@@ -43,18 +40,18 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                <a class="navbar-brand" href="index.html"><img src="logo_white_no_text.png" width="150px" height="40" alt="AZ Loop"> </a>
+                <a class="navbar-brand" href="../../index.html"><img src="../../Resources/Logos/logo_white_no_text.png" width="150px" height="40" alt="AZ Loop"> </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="updates.html">Updates</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="../updates.html">Updates</a></li>
+                    <li><a href="../about.html">About Us</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Meet The Team <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="Projectleads.html">Project Leads</a></li>
+                            <li><a href="Project_leads.html">Project Leads</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="business_team.html">Business Team</a></li>
                             <li role="separator" class="divider"></li>
@@ -63,23 +60,23 @@
                             <li><a href="mechanical_team.html">Mechanical Team</a></li>
                         </ul>
                     </li>
-                    <li><a href="sponsors.html">Our Sponsors</a></li>
+                    <li><a href="../sponsors.html">Our Sponsors</a></li>
                 </ul>
 
                 <div id="navbar-icons">
                     <ul class="nav navbar-nav navbar-right">
 
                         <li>
-                            <a id="facebook" href="https://www.facebook.com/AZLoopHyperloop"><img src="FB-f-Logo__blue_29.png"></a>
+                            <a id="facebook" href="https://www.facebook.com/AZLoopHyperloop"><img src="../../Resources/Social-Media/facebook.png" width="30" height="30"></a>
                         </li>
                         <li>
-                            <a id="twitter" href="https://twitter.com/AZLoopHyperloop"><img src="Twitter_Social_Icon_Rounded_Square_Color.png" width="29" height="29"></a>
+                            <a id="twitter" href="https://twitter.com/AZLoopHyperloop"><img src="../../Resources/Social-Media/Twitter.png" width="30" height="30"></a>
                         </li>
                         <li>
-                            <a id="instagram" href="https://www.instagram.com/azloophyperloop/"><img src="Instagram-v051916.png" width="29" height="29"></a>
+                            <a id="instagram" href="https://www.instagram.com/azloophyperloop/"><img src="../../Resources/Social-Media/Instagram.png" width="30" height="30"></a>
                         </li>
                         <li>
-                            <a id="youtube" href="https://www.youtube.com/channel/UCg4CZGDqXLQ2mWUkM4w4COw"><img src="youtube.png" height="29"></a>
+                            <a id="youtube" href="https://www.youtube.com/channel/UCg4CZGDqXLQ2mWUkM4w4COw"><img src="../../Resources/Social-Media/Youtube.png" width="30" height="30"></a>
                         </li>
 
                     </ul>
@@ -96,7 +93,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Tommi.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Tommi.jpg" alt="...">
                     <div class="caption">
                         <h3>Thomas Koho</h3>
                         <h6>Mechanical Co-Lead</h6>
@@ -107,7 +104,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Christian.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Christian.jpg" alt="...">
                     <div class="caption">
                         <h3>Christian Reischauer</h3>
                         <h6>Mechanical Co-Lead</h6>
@@ -120,7 +117,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\DSCF1040.JPG" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/DSCF1040.JPG" alt="...">
                     <div class="caption">
                         <h3>Amy Walker</h3>
                         <h6>Safety & Risk Analysis</h6>
@@ -133,7 +130,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Quoc.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Quoc.jpg" alt="...">
                     <div class="caption">
                         <h3>Quoc Lam</h3>
                         <h6>Braking Subteam Lead</h6>
@@ -147,7 +144,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Akshay.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Akshay.jpg" alt="...">
                     <div class="caption">
                         <h3>Akshay Kamath</h3>
                         <h6>Materials & Manufacturing Subteam Lead</h6>
@@ -160,7 +157,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical/KailashRangaraj.jpg" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/mechanical/KailashRangaraj.jpg" alt="..." width=161 height=225>
                     <div class="caption">
                         <h3 class="longName">Kailash Rangaraj Bommannan Kuppuraju</h3>
                         <h6>Dynamics Subteam Lead</h6>
@@ -171,7 +168,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Avery Carter.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Avery Carter.jpg" alt="...">
                     <div class="caption">
                         <h3>Avery Carter</h3>
                         <h6>Leviation Subteam Lead</h6>
@@ -182,7 +179,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Cody.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Cody.jpg" alt="...">
                     <div class="caption">
                         <h3>Cody Dodd</h3>
                         <h6>Propulsion Subteam Lead</h6>
@@ -196,7 +193,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Mohammed.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Mohammed.jpg" alt="...">
                     <div class="caption">
                         <h3>Mohammed Rehman</h3>
                         <h6>Modeling & Simulation Subteam Lead</h6>
@@ -207,7 +204,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Oscar Varela</h3>
@@ -220,7 +217,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Roberts-Athena-3745-b.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Roberts-Athena-3745-b.jpg" alt="...">
                     <div class="caption">
                         <h3>Athena Roberts</h3>
                         <h6>Propulsion</h6>
@@ -232,7 +229,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="...">
+                    <img src="../../member_bios/pictures/Image not available.png" alt="...">
                     <div class="caption">
                         <h3>Isaiah Wall</h3>
                         <h6>Propulsion</h6>
@@ -246,7 +243,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="...">
+                    <img src="../../member_bios/pictures/Image not available.png" alt="...">
                     <div class="caption">
                         <h3>Madison Grayson</h3>
                         <h6>Propulsion</h6>
@@ -257,7 +254,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="...">
+                    <img src="../../member_bios/pictures/Image not available.png" alt="...">
                     <div class="caption">
                         <h3>Jessica Maschino</h3>
                         <h6>Propulsion</h6>
@@ -269,7 +266,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Hyperloop_3.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Hyperloop_3.jpg" alt="...">
                     <div class="caption">
                         <h3>Umesh Prasad</h3>
                         <h6>Levitation</h6>
@@ -282,7 +279,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Hyperloop_9.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Hyperloop_9.jpg" alt="...">
                     <div class="caption">
                         <h3>Rohit Kumar Ladda</h3>
                         <h6>Dynamics</h6>
@@ -296,7 +293,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Sachin.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Sachin.jpg" alt="...">
                     <div class="caption">
                         <h3>Sachin Shivakumar</h3>
                         <h6>Dynamics</h6>
@@ -307,7 +304,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Vijay.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Vijay.jpg" alt="...">
                     <div class="caption">
                         <h3>Vijay Pentapati</h3>
                         <h6>Dynamics</h6>
@@ -319,7 +316,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Kanniappan_2.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Kanniappan_2.jpg" alt="...">
                     <div class="caption">
                         <h3>Kanniappan Krishnarajakumar</h3>
                         <h6>Dynamics</h6>
@@ -330,7 +327,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Surya.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Surya.jpg" alt="...">
                     <div class="caption">
                         <h3>Surya Sarvajith</h3>
                         <h6>Propulsion</h6>
@@ -344,7 +341,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Prerak.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Prerak.jpg" alt="...">
                     <div class="caption">
                         <h3>Prerak Dongaonkar</h3>
                         <h6>Modeling & Simulation</h6>
@@ -355,7 +352,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Swapnil.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Swapnil.jpg" alt="...">
                     <div class="caption">
                         <h3>Swapnil Nimse</h3>
                         <h6>Modeling & Simulation</h6>
@@ -367,7 +364,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Rohan.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Rohan.jpg" alt="...">
                     <div class="caption">
                         <h3>Rohan Thakker</h3>
                         <h6>Modeling & Simulation</h6>
@@ -378,7 +375,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Sharan.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Sharan.jpg" alt="...">
                     <div class="caption">
                         <h3>Sharan Kishore</h3>
                         <h6>Modeling & Simulation</h6>
@@ -392,7 +389,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Vijay Jangid.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Vijay Jangid.jpg" alt="...">
                     <div class="caption">
                         <h3>Vijay Jangid</h3>
                         <h6>Modeling & Simulation</h6>
@@ -403,7 +400,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\James Casey.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/James Casey.jpg" alt="...">
                     <div class="caption">
                         <h3>James Casey</h3>
                         <h6>Braking Systems</h6>
@@ -414,7 +411,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Mohanad.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Mohanad.jpg" alt="...">
                     <div class="caption">
                         <h3>Mohanad Al Sabti</h3>
                         <h6>Braking Systems</h6>
@@ -425,7 +422,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Hyperloop_11.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Hyperloop_11.jpg" alt="...">
                     <div class="caption">
                         <h3>Akshay Nayak</h3>
                         <h6>Braking Systems</h6>
@@ -439,7 +436,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Karthik.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Karthik.jpg" alt="...">
                     <div class="caption">
                         <h3>Karthik Sankaran</h3>
                         <h6>Materials & Manufacturing</h6>
@@ -450,7 +447,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Gautham Shankar Ayyapessur.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Gautham Shankar Ayyapessur.jpg" alt="...">
                     <div class="caption">
                         <h3>Gautham Ayyapessur</h3>
                         <h6>Materials & Manufacturing</h6>
@@ -461,7 +458,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Rohith.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Rohith.jpg" alt="...">
                     <div class="caption">
                         <h3>Rohith Mathews</h3>
                         <h6>Materials & Manufacturing</h6>
@@ -473,7 +470,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="...">
+                    <img src="../../member_bios/pictures/Image not available.png" alt="...">
                     <div class="caption">
                         <h3>Carl Allred</h3>
                         <h6>Materials & Manufacturing</h6>
@@ -487,7 +484,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\RAHUL VERMA.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/RAHUL VERMA.jpg" alt="...">
                     <div class="caption">
                         <h3>Rahul Verma</h3>
                         <h6>Materials & Manufacturing</h6>
@@ -498,7 +495,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\Leann Scott.jpg" alt="...">
+                    <img src="../../member_bios/pictures/mechanical/Leann Scott.jpg" alt="...">
                     <div class="caption">
                         <h3>Leann Scott</h3>
                         <h6>Propulsion</h6>
@@ -509,7 +506,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Bhavik Patel</h3>
@@ -522,7 +519,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\ZoeCayetano.jpg" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/mechanical/ZoeCayetano.jpg" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Zoë Cayetano</h3>
@@ -540,7 +537,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Mitchell Neal</h3>
@@ -553,7 +550,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Garrett Ottmers</h3>
@@ -566,7 +563,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\AnthonySpadafore.jpg" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/mechanical/AnthonySpadafore.jpg" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Anthony Spadafore</h3>
@@ -579,7 +576,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Megan Moore</h3>
@@ -597,7 +594,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Meaghan Moeller</h3>
@@ -610,7 +607,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Victor Ordaz</h3>
@@ -623,7 +620,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Maciej Czyz</h3>
@@ -636,7 +633,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3 class="longName">Karan Subhash Bhutada</h3>
@@ -652,7 +649,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Ashley Curiel</h3>
@@ -665,7 +662,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>James Collins</h3>
@@ -678,7 +675,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Ashwin Krishnamurthy</h3>
@@ -691,7 +688,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Joshua Bowen</h3>
@@ -707,7 +704,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Gurupkar Nerwal</h3>
@@ -726,7 +723,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Perek Dongaonkar</h3>
@@ -739,7 +736,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3 class="longName">Amogh Maharudra Gadagi</h3>
@@ -752,7 +749,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3 class="longName">Anjaneya Mallikarjun Kudale</h3>
@@ -771,7 +768,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\mechanical\JonathonBarkl.jpg" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/mechanical/JonathonBarkl.jpg" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Jonathon Barkl</h3>
@@ -787,7 +784,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Rahil Gupta</h3>
@@ -800,7 +797,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Brendan Trang</h3>
@@ -813,7 +810,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Cody Boeckholt</h3>
@@ -830,7 +827,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Jayanth Karthikeyan</h3>
@@ -843,7 +840,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Adithya Krishna Raja</h3>
@@ -856,7 +853,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Brian Chang</h3>
@@ -869,7 +866,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3 class="longName">Vignesh Shenbagarajan</h3>
@@ -886,7 +883,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Surya Prakash Reddy</h3>
@@ -899,7 +896,7 @@
 
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail">
-                    <img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
                     <div class="caption">
                         <!--  Name-->
                         <h3>Collin Holman</h3>
@@ -909,31 +906,26 @@
                     </div>
                 </div>
             </div>
-
             <!--
-<div class="col-sm-6 col-md-3">
-<div class="thumbnail">
-<img src="member_bios\pictures\Image not available.png" alt="..." width=161 height=225>
-<div class="caption">
+            <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+            <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
+            <div class="caption">
 
-<h3></h3>
+            <h3></h3>
 
-<h6></h6>
-<p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="" data-content="">Learn More</a></p>
-</div>
-</div>
-</div>
--->
-
-
+            <h6></h6>
+            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="" data-content="">Learn More</a></p>
+            </div>
+            </div>
+            </div>
+            -->
         </div>
-
-
         <div class="navbutton">
             <nav aria-label="...">
                 <ul class="pager">
                     <li class="previous"><a href="controls_team.html"><span aria-hidden="true">&larr;</span> Controls Team</a></li>
-                    <li class="next"><a href="#">Our Sponsors <span aria-hidden="true">&rarr;</span></a></li>
+                    <li class="next"><a href="../sponsors.html">Our Sponsors <span aria-hidden="true">&rarr;</span></a></li>
                 </ul>
             </nav>
         </div>
