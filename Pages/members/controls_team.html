@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AZLoop | Controls Team</title>
+
+    <!-- Local CSS Link-->
+    <link rel="stylesheet" href="../../index.css">
+    <!-- Bootstrap CSS Link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Script Links -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.0/ui-bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- File Links -->
+    <script src="app.js"></script>
+    <script src="Scripts/azLoopController.js"></script>
+
+    <script>
+        $(function() {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+</head>
+
+<body ng-app="azLoop" ng-controller="AzLoopController">
+    <nav class="navbar-sticky navbar navbar-inverse navbar-static-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand" href="../../index.html"><img src="../../Resources/Logos/logo_white_no_text.png" width="150px" height="40" alt="AZ Loop"> </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="../updates.html">Updates</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Meet The Team <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Project_leads.html">Project Leads</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="business_team.html">Business Team</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="controls_team.html">Controls Team</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="mechanical_team.html">Mechanical Team</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../sponsors.html">Our Sponsors</a></li>
+                </ul>
+
+                <div id="navbar-icons">
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li>
+                            <a id="facebook" href="https://www.facebook.com/AZLoopHyperloop"><img src="../../Resources/Social-Media/facebook.png" width="30" height="30"></a>
+                        </li>
+                        <li>
+                            <a id="twitter" href="https://twitter.com/AZLoopHyperloop"><img src="../../Resources/Social-Media/Twitter.png" width="30" height="30"></a>
+                        </li>
+                        <li>
+                            <a id="instagram" href="https://www.instagram.com/azloophyperloop/"><img src="../../Resources/Social-Media/Instagram.png" width="30" height="30"></a>
+                        </li>
+                        <li>
+                            <a id="youtube" href="https://www.youtube.com/channel/UCg4CZGDqXLQ2mWUkM4w4COw"><img src="../../Resources/Social-Media/Youtube.png" width="30" height="30"></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Content -->
+    <div class="container meetTeam">
+
+        <!--           ROW 1-->
+        <div class="row">
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/control/Sam.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Samantha Janko</h3>
+                        <h6>Controls Team Lead</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Samantha Janko" data-content="Samantha Janko is a Systems Engineering PhD student at Arizona State University Polytechnic. Coming from a background in Engineering Robotics (BS) in her undergraduate studies, she is experienced in system design, hardware development, and software controls. She is a current NSF GRFP fellowship recipient conducting research in the area of self-organizing  microgrids and next generation power distribution networks, while also participating in off-grid microgrid projects focused on bringing power to the developing world.As a part of the Hyperloop team, Sam is responsible for the design and development of the AZLoop competition pod power system. This includes consideration of power system sizing, modeling, component selection, power regulation, electrical infrastructure and safety circuits, power/battery management system controls, and integration of subsystems together.LinkedIn: www.linkedin.com/in/samantha-janko">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/control/Hyperloop_13.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Sandesh Bhat</h3>
+                        <h6>Modeling & Simulation Subteam Lead</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Sandesh Bhat" data-content="Sandesh’s work with AZLoop involves modeling and simulation of the control system. He have been always curious about everything. As a kid, He watched discovery channel instead of cartoons as they would seem more interesting than anything else. Hyperloop is a new age transportation idea and He  would like to be a part of building, enhancing and upgrading it. He is a Masters student in the MAE department at ASU with Robotics as my concentration. He has been involved in a project on upper body prosthesis during my bachelors. He is interested in the field of prosthesis and efficient control.He is also interested in the fine art of painting and sketching. After starting to live on his own he has taken interest in the art that is essential for one’s survival: Cooking.">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/control/photo.jpg" alt="...">
+                    <div class="caption">
+                        <h3>John Zach Alden</h3>
+                        <h6>Power & Electronics Subteam Lead</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="John Zach Alden" data-content="John Alden is a Junior at Arizona State University’s Polytechnic Campus. He is pursuing his Bachelor’s Degree in Software Engineering with a specialization in Embedded Systems. John originally joined the Hyperloop under the Software Subteam but his potential and dedication to AzLoop shone through brightly and he was quickly promoted to Electronics Lead. He is fascinated by all things electrical and software and spends most his free time working on personal engineering projects ranging from robots to websites. John is also an officer of the Campus Robotics Club and performs research on Autonomous Quadcopter Control Models.">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/Image not available.png" alt="...">
+                    <div class="caption">
+                        <h3>Joshua Hewlett</h3>
+                        <h6>Software Subteam Lead</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Dan Carmody" data-content="Josh Hewlett is a junior majoring in Software-Engineering at the Arizona State University Polytechnic Campus. He is currently pursuing a Bachelor’s Degree but wants to continue his education to achieve his Master’s as well. He is very passionate about whatever he sets out to do and constantly looks for ways to improve. He joined the Hyperloop team as the Software Sublead and is determined to make the most of his role.">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--            ROW 2-->
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/control/Satyavamshi.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Satyavamshi Pattela</h3>
+                        <h6>Modeling & Simulation</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Satyavamshi Pattela" data-content="Satya Vamshi Pattela is currently pursuing Masters of Science in Mechanical Engineering at Arizona State University’s Ira Fulton School for Engineering of Matter, Transport, and Energy. He is currently the Control Systems Modelling and Simulation Engineer in the AZLoop – HyperLoop. He completed his Bachelors’ in Engineering at Osmania University, India in 2016. All through his education period, Satya exhibited academic excellence, graduating with a GPA of 3.8 and a great zeal in learning new concepts. Satya was involved in designing and fabricating a PC based Remoted Operated Inspection System for PFBR Sub-assemblies at Nuclear Fuel Complex, India. Fascinated by the idea of Hyperloop, Satya joined AZLoop as member of Controls Modeling and Simulation team where he is responsible for building the control model for the pod’s power system using MATLAB, Simulink and Stateflow.Apart from studies, Satya is interested in reading, writing, cooking and dancing. He is member of ASU ANDAAZ- an ASU based Bollywood Fusion Dance Team.">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/Image not available.png" alt="...">
+                    <div class="caption">
+                        <h3>Sanjay Reddy</h3>
+                        <h6>Modeling & Simulation</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Sanjay Kumar Reddy" data-content="Sanjay Kumar Reddy is a B.Tech Electrical Engineer from VIT, Chennai, India, currently pursuing Masters of Science in Electrical Engineering from Arizona State University. He has always been interested in the field of controls and automation and has been actively involved in lot of hands on projects during his undergraduate studies.He interest in solving problems that have an impact on the world drove him towards Hyperloop and he is a part of the control system and modelling sub team and is responsible for design and control of levitation part of the pod. When he is not working towards his degree or on a project he spends his time learning more about space and history!">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/control/Venkatavaradhan V Lakshminarayanan.jpg" alt="...">
+                    <div class="caption">
+                        <h4>Venkatavaradhan Lakshminarayanan</h4>
+                        <h6>Modeling & Simulation</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Venkatavaradhan Lakshminarayanan" data-content="Venkatavaradhan V Lakshminarayanan is a graduate student pursuing Electrical Engineering (control systems) at the Arizona State University, Tempe. He obtained his undergraduate degree from India with a major in Instrumentation and Control Engineering. Venkatavaradhan did his bachelor’s thesis by designing a fault tolerant control system for Quad-rotors. The project dealt with transforming the physical structure of the air borne system to account for the loss of a single propeller force. This thesis was supported by developing a mathematical model, deriving state space and transfer functions to perform Kalman’s controllability & observability tests. Also, he was involved in developing control systems using image processing for an Autonomous Underwater Vehicle. Also, he won a research grant to fabricate a bio-telemetry system to monitor the vital signs of patients, funded by department of science and technology, India. Outside academics, he follows soccer and he is an ardent fan of Arsenal football club. He loves music and takes extra effort to teach people what he knows.">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/control/Singh_Kanishka_Hyperloop.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Kanishka Singh</h3>
+                        <h6>Modeling & Simulation</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Kanishka Singh" data-content="Kanishka Raj Singh is currently pursuing a Masters of Science in Mechanical Engineering (Control Sytems and Mechanical Design Track) at Arizona State University’s School for Engineering of Matter, Transport, and Energy. He is currently the Control Systems Modelling and Simulation engineer in the AZLoop – HyperLoop. He graduated from NIT Tiruchirappalli in 2014. He has been working on hands on projects like modeling and control of Robots, that involve direct application of concepts involved in the relevant course work. He has also been a part of the basketball team during his undergrad, and takes pride in being a leader, a motivator and a result oriented team player.">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--           ROW 3-->
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/control/Akshat.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Akshat Baveja</h3>
+                        <h6>Modeling & Simulation</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Akshat Baveja" data-content="Akshat Baveja is currently pursuing a Masters of Science in Mechanical Engineering (Control Sytems and Mechanical Design Track) at Arizona State University’s School for Engineering of Matter, Transport, and Energy. He is currently the Control Systems Modelling and Simulation engineer in the AZLoop – HyperLoop. He graduated from IIT Kharagpur in 2015. Previously, He has been involved in IIT Kharagpur’s Formula SAE Team and has taken up the roles of Project Lead, Chassis Design Lead and Sponsorship, Finance and Marketing Lead during the four year of working. He is extremely passionate about research and solving real world problems which makes AZloop an exciting endeavor.">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/control/Shubham Sonawani.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Shubham Sonawani</h3>
+                        <h6>Modeling & Simulation</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Shubham Sonawani" data-content="Currently, Shubham Sonawani is pursuing his Masters in Electrical Engineering at Arizona State University with Specialization in Controls and Robotics. He recently,In May 2016, Completed his Bachelor in Technology with Electrical Engineering as Major from V.J.T.I.(Veermata Jijabai Technological Institute ), Mumbai, India. He is working as Electronics Model Design Engineer-Controls in AZloop SpaceX Hyperloop Team. Considering his prior experience, He worked on project “Autonomous Navigation in Ackermann Steering Robots” during his under graduation , Where he contributed in designing working Model of Car with Real Time Path Planning and Localization feature using LIDAR sensor and overhead Camera. He designed control system for car model with higher optimized control over navigation of car through path obtained by real time path planning using Hybrid A* algorithm. Also He contributed in Research paper on “Real Time Localization And Path Planning Using Single Camera And 2D Lidar In Ackermann Steering Robots” . In addition to this , He worked on gestured controlled robots as part of Academic Project where he worked on image processing tools available in MATLAB for designing logics for various gestures controlled motion of end effector of robot. Apart from academics , He worked in Techno - Managerial Event called Technovanza during his undergrad as Corporate Relations Executive in sponsorship Sector. Currently, He is currently working as Instructional Assistance in Dept. of Mathematics and Statistical Sciences at ASU, Tempe. Apart from Work and academics, he likes to go on hiking and travel to new places.">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/control/Abhinav Karthik Sridhar.jpg" alt="...">
+                    <div class="caption">
+                        <h4>Abhinav Karthik Sridhar</h4>
+                        <h6>Modeling & Simulation</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Abhinav Karthik Sridhar" data-content="Abhinav Karthik Sridhar is a current graduate student at Arizona State University pursuing his master’s in Electrical Engineering (Controls). He has hands on experience on Industrial Control systems and robotics. He completed his bachelors in Electronics and Instrumentation with distinction and a university rank. He is currently the Control systems modelling and Simulation engineer in the AZLoop – HyperLoop team. An enthusiastic person who loves real world challenges! He strongly believes that HyperLoop is the next big thing that is going to revolutionize this world.">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/control/Brent.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Brent Kolste</h3>
+                        <h6>Controllers, Sensors, & Actuators</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Brent Kolste" data-content="Brent Kolste is a Junior at Arizona State University and is pursuing his degree in Robotics Engineering. He is a member of the controls electronics team on AZ Loop. He wants to make a difference in his culture and society by using his skills, gifts, and talents to serve others. Developing new mode of transportation would change they way we live our daily lives and connect us like never before which is the reason he joined AZ Loop. Outside of school he is an avid outdoorsman that enjoys camping, hiking, and anything else you can do out in the fresh air.">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--           ROW 4-->
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/control/Victor.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Victor Rodriguez</h3>
+                        <h6>Controllers, Sensors, & Actuators</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Victor Rodriguez" data-content="Victor Rodriguez is a Junior at Arizona State University, working towards a BSE in Engineering with a focus on Robotics. He has always challenged himself academically by being dual enrolled in community college while in high school. He not only graduated high school with an Associates of Arts, he pushed himself farther and also graduated with an Associates of Science. Upon graduation he plans to work as an engineer in the robotic industry for a few years to gain valuable experience before earning a Master’s degree in Engineering Management. He has experience with embedded system projects, which he is utilizing as a functional team member in the controls electrical team for AZLoop. Outside of school he enjoys playing basketball and football and is an avid robotics hobbyist.">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/control/Ryan.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Ryan Kritz</h3>
+                        <h6>Controllers, Sensors, & Actuators</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Ryan Kritz" data-content="Ryan is a senior at Arizona State University majoring in Robotics with a secondary in Electrical Systems. This is his second year working with hyperloop.">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/control/Tahmidur.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Tahmidur Rahman</h3>
+                        <h6>Controllers, Sensors, & Actuators</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Tahmidur Rahman" data-content="Tahmidur Rahman is on the navigation team, which will apply the inertia navigation system to the hyperloop. This means that the current position, velocity, and acceleration will be calculated by using previous measurements for the three components. He is currently pursuing an undergraduate degree in Electrical Engineering at ASU. Within the field of electrical engineering He is interested in studying electromagnetics due to the challenge it poses and its application in the cell phone and the aerospace industry, both of which he is very interested in getting involved in.">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/Image not available.png" alt="...">
+                    <div class="caption">
+                        <h3>Saeed Aljneibi</h3>
+                        <h6>Controllers, Sensors, & Actuators</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Saeed Aljneibi" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--           ROW 5-->
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/control/Xunguang.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Xunguang Li</h3>
+                        <h6>Communication & Navigation</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Xunguang Li" data-content="Xunguang is currently a student at the Arizona State University majoring in Engineering (Electrical Systems). He is recently working on his Capstone project: Repetitive Avalanche Test Fixture for ON Semiconductor. Additionally, he is the sub-team lead of the navigation system. He is developing the inertial navigation system for AZLoop - Arizona’s SpaceX Hyperloop Competition Team.">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/control/Prashanth Kumar Mansani.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Prashanth Prasani</h3>
+                        <h6>Power</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Prashanth Prasani" data-content=" INSERT BIO HERE ">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/Image not available.png" alt="...">
+                    <div class="caption">
+                        <h3>Nikola Uzelac</h3>
+                        <h6>Software</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Nikola Uzelac" data-content="Nikola Uzelac is a sophomore at ASU studying Computer Science. He’s a software engineering intern at United Technologies and a competition director of the Software Developers Association. He decided that he wanted to challenge himself so he joined ASU Hyperloop as a Control Systems Engineer - Navigation. The club so far has been one of the most eye opening experiences He’s had from an ASU club. Everyone seems to be extremely intelligent and well versed in physics/mathematics. He feels extremely honored to be surrounded by a group of people much smarter than him, and he’s ready to learn from them.">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/control/StephenFlores.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Stephen Flores</h3>
+                        <h6>Software</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Stephen Flores" data-content="Stephen Flores is a sophomore at Arizona State University, majoring in Computer Science and minoring in Chinese. In high school he began learning iOS app development through the then-newly-announced Swift programming language. Through this, he developed the foundation of skills that would carry him through the next few years. In university, he began applying his programming skills towards various engineering projects in a variety of ASU’s student organizations. It was at this time when he began to use the Arduino development platform, which was the platform of choice for SDSL’s CanSat competition and the ASU ASCEND weather balloon payload. While engineering projects was his main interest, he also wanted to pursue Chinese as a second language, having been exposed to a variety of Chinese and Korean media. It was thus that he began his path toward a minor in Chinese, in which he must take 21 credit-hours per semester to satisfy the requirement. In his second year, he joined the AZLoop Hyperloop Competition team, where he intends on working on developing the technology to further advance human transportation.">  Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--          ROW 6-->
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/control/VaibhavJhawar.jpg" alt="..." width=161 height=225>
+                    <div class="caption">
+                        <!--  Name-->
+                        <h3>Vaibhav Jhawar</h3>
+                        <!--  Role-->
+                        <h6>Modeling & Simulation</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Vaibhav Jhawar" data-content="Vaibhav Jhawar is currently pursuing a Master of Science in Mechanical Engineering at Arizona State University’s School for Engineering of Matter, Transport, and Energy. He attended Vasavi College of Engineering affiliated to Osmania University, India to earn a Bachelor of Engineering in Mechanical Engineering in 2016. From Thermal to Design, and Controls to Manufacturing, every aspect of mechanical engineering excites him. In his bachelor’s degree, he was involved with a project of Design, Fabrication, and Optimization of very economical Vortex Tube Refrigeration. 
+                                With keen interest and knowledge and a desire to serve the Mechanical community and the world, Vaibhav joined the AZLoop team for SpaceX’s Hyperloop Competition as a Controls Modelling and Simulation Engineer. He is responsible for building a control model for the Propulsion of the pod using MATLAB, Simulink, and Stateflow. He gives his best for the success of AZLoop.
+                                Vaibhav likes music, reading, playing sports and games, and exploring places.">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
+                    <div class="caption">
+                        <!--  Name-->
+                        <h3>Harsha Gopisetty</h3>
+                        <!--  Role-->
+                        <h6>Modeling & Simulation</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Harsha Gopisetty" data-content="Harsha Gopisetty is a current graduate student at Arizona State University pursuing his Master's degree in Electrical Engineering (Control Systems). He has completed his undergraduate in Electrical and Electronics Engineering with distinction. He has worked in the R&D division of Robert Bosch and was closely involved in developing software for the fuel systems of gasoline cars and on cruise-control modules. He is currently a Control Systems Modeling and Simulation Engineer on the AZLoop Hyperloop competition team. He is innovative, a quick learner, and highly focused and believes in doing smart and effective work. He is looking forward to bringing on board his software development and modeling skills and his automotive background to the fore. He is also a professional musician and has performed in over 50 concerts.">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
+                    <div class="caption">
+                        <!--  Name-->
+                        <h3>Kishen Mahadevan</h3>
+                        <!--  Role-->
+                        <h6>Modeling & Simulation</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Kishen Mahadevan" data-content="Kishen is a Graduate Student at IRA Fulton school of Engineering, Arizona State University, specializing in the field of Electrical Engineering with concentration in Control Systems. He has 1 year of experience in Product development at Kalkitech, a Bangalore based electrical firm which is striving towards developing better products for the smart grid. He is currently working as Control System Modelling and Simulation Engineer in AZLoop – Arizona’s SpaceX Hyperloop Competition Team. He understands the importance of meeting deadlines and is focused on get his job done. A creative thinker passionate about engendering new ideas.">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
+                    <div class="caption">
+                        <!--  Name-->
+                        <h3>Venkata Motupalli</h3>
+                        <!--  Role-->
+                        <h6>Controllers, Sensors, & Actuators</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Venkata Motupalli" data-content="Venkata Sai Charan Motupalli is an electrical engineering graduate student, specializing in control systems from Ira. A. Fulton School of Engineering, Arizona State University. He completed his bachelors in Electronics and Instrumentation from Anna University, India. He is currently the Control systems design engineer in the AZLoop – HyperLoop team. He has always taken up the challenge to solve the real-world problems. He believes that hyperloop would mark a new era in transportation and the time has arrived for it to turn into a reality. Besides this, he is avid music listener and cricket enthusiast.">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--            ROW 7-->
+        <div class="row">
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
+                    <div class="caption">
+                        <!--  Name-->
+                        <h3>Michael McCann</h3>
+                        <!--  Role-->
+                        <h6>Controllers, Sensors, & Actuators</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Michael McCan" data-content="I will be working on the electronics component of the controls. I have attended ASU since spring 2016 and I went to MCC and CGCC before that. I have worked on programing on the raspberry pi’s since the first version was released. I created a solar power project that I presented at the Arizona Science Center where solar power was converted to mechanical energy to spin a pin wheel. I enjoy hiking, boxing and doing mud runs.">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
+                    <div class="caption">
+                        <!--  Name-->
+                        <h3>Vineet Gattani</h3>
+                        <!--  Role-->
+                        <h6>Software</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Vineet Gattani" data-content="Vineet Gattani is a graduate student pursuing his Masters in Electrical Engineering. Vineet’s academic interests lies in signal processing, micro-controller programming. His goal is to build sustainable and efficient technologies which could be used by the community for their benefit. He has published a research publication in the journal, “Computers in Biology and Medicine” which aims at solving a practical challenge in image analysis using advanced segmentation techniques. He likes to learn new technologies and explore different platforms. He has spent a summer interning as an iOS application developer. Apart from academics, he likes to ride horses, hiking, travelling and likes to meet new people. He is on Controls-Software team as a Software Engineer for AZLoop.">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
+                    <div class="caption">
+                        <!--  Name-->
+                        <h3>Sai Aditya Bodavala</h3>
+                        <!--  Role-->
+                        <h6>Software</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Sai Aditya Bodavala" data-content="Sai Aditya is a Graduate Student at ASU majoring in Software Engineering. He graduated from Gitam, Hyderbad in 2016 with an Undergraduate Degree in Information Technology. He loves computers and has worked on websites singlehandedly (gamestech.in). He also worked as a tester/engineer for a large firm who develop android applications for Hasbro and Disney. He also loves SpaceX and belives in the need for people to have better transportation which has less impact on the environment. This lead him to join the AZloop team. Hobbies include Gaming, Rap Music, Skateboarding, Soccer, Wrestling, MMA, CARS(everything about cars).">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
+                    <div class="caption">
+                        <!--  Name-->
+                        <h3>Haocheng Zhang</h3>
+                        <!--  Role-->
+                        <h6>Software</h6>
+                        <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="Haocheng Zhang" data-content="My name is Haocheng Zhang. I am an international student at ASU, and my major is Software Engineering. As an undergraduate engineering student in Polytechnic campus, skills and social networks are critical parts of life. I love to participate events that I interested, especially technology-related events. I like to play video games during spare time and learn programming algorithms. In my opinion, to play games will generate more ideas to me and I can utilize in my game projects. I joined Azloop team in Jan 2017, and I surprisingly found that the team gave tremendous efforts on the project. I am glad I can be one of them and use all the energy I have on the team. I am so exciting about the project, because we have competition between other universities. I believe the ASU team will win the prize and continuously work hard.">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--            ROW 8-->
+        <div class="row">
+
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="../../member_bios/pictures/Image not available.png" alt="..." width=161 height=225>
+                    <div class="caption">
+                        <!--  Name-->
+                        <h3>Rohith Gopi</h3>
+                        <!--  Role-->
+                        <h6>Software</h6>
+                        <!--                            <p><a href="#" class="btn btn-primary" role="button" data-toggle="popover" data-placement="auto" data-trigger="focus" title="" data-content="">Learn More</a></p>-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="navbutton">
+        <nav aria-label="...">
+            <ul class="pager">
+                <li class="previous"><a href="business_team.html"><span aria-hidden="true">&larr;</span> Business Team</a></li>
+                <li class="next"><a href="mechanical_team.html">Mechanical Team <span aria-hidden="true">&rarr;</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
