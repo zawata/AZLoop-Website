@@ -3,13 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>AZLoop</title>
+    <title>AZLoop | About Us</title>
 
     <!-- Local CSS Link-->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../index.css">
     <!-- Bootstrap CSS Link-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
 
     <!-- Script Links -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
@@ -22,7 +21,6 @@
     <!-- File Links -->
     <script src="app.js"></script>
     <script src="Scripts/azLoopController.js"></script>
-
 </head>
 
 <body ng-app="azLoop" ng-controller="AzLoopController">
@@ -36,43 +34,43 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                <a class="navbar-brand" href="../index.html"><img src="Resources/Logos/logo_white_no_text.png" width="150px" height="40" alt="AZ Loop"> </a>
+                <a class="navbar-brand" href="../index.html"><img src="../Resources/Logos/logo_white_no_text.png" width="150px" height="40" alt="AZ Loop"> </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="Pages/updates.html">Updates</a></li>
-                    <li><a href="Pages/about.html">About Us</a></li>
+                    <li><a href="updates.html">Updates</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Meet The Team <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="Pages/members/Project_leads.html">Project Leads</a></li>
+                            <li><a href="members/Project_leads.html">Project Leads</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="Pages/members/business_team.html">Business Team</a></li>
+                            <li><a href="members/business_team.html">Business Team</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="Pages/members/controls_team.html">Controls Team</a></li>
+                            <li><a href="members/controls_team.html">Controls Team</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="Pages/members/mechanical_team.html">Mechanical Team</a></li>
+                            <li><a href="members/mechanical_team.html">Mechanical Team</a></li>
                         </ul>
                     </li>
-                    <li><a href="Pages/sponsors.html">Our Sponsors</a></li>
+                    <li><a href="sponsors.html">Our Sponsors</a></li>
                 </ul>
 
                 <div id="navbar-icons">
                     <ul class="nav navbar-nav navbar-right">
 
                         <li>
-                            <a id="facebook" href="https://www.facebook.com/AZLoopHyperloop"><img src="Resources/Social-Media/facebook.png" width="30" height="30"></a>
+                            <a id="facebook" href="https://www.facebook.com/AZLoopHyperloop"><img src="../Resources/Social-Media/facebook.png" width="30" height="30"></a>
                         </li>
                         <li>
-                            <a id="twitter" href="https://twitter.com/AZLoopHyperloop"><img src="Resources/Social-Media/Twitter.png" width="30" height="30"></a>
+                            <a id="twitter" href="https://twitter.com/AZLoopHyperloop"><img src="../Resources/Social-Media/Twitter.png" width="30" height="30"></a>
                         </li>
                         <li>
-                            <a id="instagram" href="https://www.instagram.com/azloophyperloop/"><img src="Resources/Social-Media/Instagram.png" width="30" height="30"></a>
+                            <a id="instagram" href="https://www.instagram.com/azloophyperloop/"><img src="../Resources/Social-Media/Instagram.png" width="30" height="30"></a>
                         </li>
                         <li>
-                            <a id="youtube" href="https://www.youtube.com/channel/UCg4CZGDqXLQ2mWUkM4w4COw"><img src="Resources/Social-Media/Youtube.png" width="30" height="30"></a>
+                            <a id="youtube" href="https://www.youtube.com/channel/UCg4CZGDqXLQ2mWUkM4w4COw"><img src="../Resources/Social-Media/Youtube.png" width="30" height="30"></a>
                         </li>
 
                     </ul>
@@ -84,14 +82,32 @@
     </nav>
 
     <div class="container">
-        <img src="Resources/FrontPage/FrontRender.png" height="600" width="1150">
-        <div id="home-quote">
-            <nav aria-label="...">
-                <ul class="pager">
-                    <li class="next"><a href="Pages/updates.html">Updates <span aria-hidden="true">&rarr;</span></a></li>
-                </ul>
-            </nav>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-md-offset-2">
+                <img src="../Resources/about/Team Photo.jpg" height="500" width="800">
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-md-offset-2">
+                <h1>About Us!</h1>
+                <p>
+                    AZLoop is a unique collaboration between students at Arizona State University, Thunderbird School of Global Management, Embry Riddle Aeronautical University, and Northern Arizona University.
+                </p>
+                <p>
+                    Together, we are Arizona’s SpaceX Hyperloop Competition Team - a group of over 75 brilliant students representing various fields of science, engineering, and business.
+                </p>
+                <p>
+                    Fueled by our enthusiasm for innovation and technology, the AZLoop team is working hard to make the Hyperloop a reality through collaborative efforts, the exchange of ideas, and a passion to strive for no less than the best!
+                </p>
+            </div>
         </div>
+    </div>
+
+    <div class="navbutton">
+        <nav aria-label="...">
+            <ul class="pager">
+                <li class="previous"><a href="updates.html"><span aria-hidden="true">&larr;</span> Updates</a></li>
+                <li class="next"><a href="members/Project_leads.html">Meet The Team <span aria-hidden="true">&rarr;</span></a></li>
+            </ul>
+        </nav>
     </div>
 </body>
 

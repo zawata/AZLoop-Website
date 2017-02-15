@@ -1,24 +1,24 @@
 {
-  "name": "azloop",
-  "version": "1.0.0",
-  "description": "azloop team website",
-  "main": "app.js",
-  "dependencies": {
-    "angular": "^1.6.0-rc.2"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "\u001b[2~\u001b[2~https://github.com/AZloop/AZLoop-Website.git"
-  },
-  "keywords": [
-    "az",
-    "loop",
-    "azloop"
-  ],
-  "author": "dan",
-  "license": "ISC"
+    "name": "azloop",
+    "version": "1.0.0",
+    "description": "azloop team website",
+    "main": "app.js",
+    "dependencies": {
+        "angular": "^1.6.0-rc.2"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AZloop/AZLoop-Website.git"
+    },
+    "keywords": [
+        "az",
+        "loop",
+        "azloop"
+    ],
+    "author": "dan",
+    "license": "ISC"
 }
