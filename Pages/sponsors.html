@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css">
     <title>
-        AZLoop
+        AZLoop | Our Sponsors
     </title>
 
     <!-- Bootstrap CSS Link-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-
-<body ng-app="azLoop" ng-controller="AzLoopController" background="FINAL.jpg">
+<div ng-app="azLoop" ng-controller="AzLoopController">
     <nav class="navbar-sticky navbar navbar-inverse navbar-static-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -71,28 +70,40 @@
     </nav>
 
     <div class="container">
-        <img src="FINAL1.png" height="600" width="1150">
-        <div id="home-quote">
-            <nav aria-label="...">
-                <ul class="pager">
-                    <li class="next"><a href="updates.html">Updates <span aria-hidden="true">&rarr;</span></a></li>
-                </ul>
-            </nav>
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-md-offset-2">
+                <h1 id="sponsor">Our Sponsors</h1>
+                <p id="sponsorState">We thank our partners in our Hyperloop endeavors. As without them, none of this would be possible.</p>
+            </div>
         </div>
+
+        <div class="row">
+            <img class="sponsor" src="sponsors/ANSYS.jpg" width=30%;>
+            <img class="sponsor" src="sponsors/DAT.png" width=30%;>
+            <img class="sponsor" src="sponsors/FUSION.png" width=30%;>
+        </div>
+
+        <div class="row" id="bottomRow">
+            <img class="sponsor" src="sponsors/PRINT.png" width=30%;>
+            <img class="sponsor" src="sponsors/URI.png" width=30%;>
+            <img class="sponsor" src="sponsors/USG.png" width=30%;>
+        </div>
+
     </div>
-</body>
 
-<!-- Script Links -->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js">
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.0/ui-bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.0/ui-bootstrap-tpls.min.js"></script>
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
+    </body>
 
-<!-- File Links -->
-<script src="app.js"></script>
-<script src="Scripts/azLoopController.js"></script>
+    <!-- Script Links -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.0/ui-bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- File Links -->
+    <script src="app.js"></script>
+    <script src="Scripts/azLoopController.js"></script>
 
 </html>
