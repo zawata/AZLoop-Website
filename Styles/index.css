@@ -8,37 +8,39 @@ footer {
 }
 
 body {
-    margin-top: 100px; /* 100px is double the height of the navbar - I made it a big larger for some more space - keep it at 50px at least if you want to use the fixed top nav */
+    margin-top: 100px;
+    /* 100px is double the height of the navbar - I made it a big larger for some more space - keep it at 50px at least if you want to use the fixed top nav */
 }
 
-.meetTeam{
-    padding-top: 20px;
+.meetTeam {
+    padding-top: 80px;
 }
 
-.longName{
+.longName {
     font-size: 20px;
 }
-.navbutton{
+
+.navbutton {
     padding-left: 25%;
     padding-right: 25%;
 }
 
-#sponsor{
+#sponsor {
     font-size: 50px;
     text-align: center;
 }
 
 #sponsorState {
-	font-size: 30px;
+    font-size: 30px;
     text-align: center;
     padding-bottom: 30px;
 }
 
-.sponsor{
+.sponsor {
     text-align: center;
     padding: 30px;
 }
 
 #bottomRow {
-	padding-top: 50px;
+    padding-top: 50px;
 }
